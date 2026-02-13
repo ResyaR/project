@@ -62,7 +62,7 @@ interface ProjectFormData {
 }
 
 // ──────────────── CONSTANTS ────────────────
-const LOGO_URL = "https://upload.wikimedia.org/wikipedia/id/2/21/LogoSMKN1Jenpo.jpeg";
+const LOGO_URL = "/logo.png";
 const SIDEBAR_COLOR = "#2c595a";
 
 // ──────────────── DUMMY DATA ────────────────
@@ -191,7 +191,7 @@ function Sidebar({ activeMenu, onMenuChange, isOpen, onClose }: SidebarProps) {
 
             {/* Sidebar */}
             <aside
-                className={`fixed top-0 left-0 z-50 h-screen w-64 overflow-y-auto transition-transform duration-300 lg:translate-x-0 ${
+                className={`fixed top-0 left-0 z-50 h-screen w-64 overflow-y-auto transition-transform duration-300 ${
                     isOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
                 style={{ backgroundColor: SIDEBAR_COLOR }}
@@ -218,11 +218,11 @@ function Sidebar({ activeMenu, onMenuChange, isOpen, onClose }: SidebarProps) {
                                 key={item.id}
                                 onClick={() => {
                                     onMenuChange(item.id);
-                                    onClose();
+                                    if (window.innerWidth < 1024) onClose();
                                 }}
                                 className={`w-full flex items-center gap-3 px-4 py-3 text-sm rounded-lg mb-1 transition-all duration-200 ${
                                     isActive
-                                        ? "bg-white/20 text-white font-semibold"
+                                        ? "bg-[#f97316] text-white font-semibold shadow-md shadow-orange-500/30"
                                         : "text-white/70 hover:bg-white/10 hover:text-white"
                                 }`}
                             >
@@ -615,7 +615,7 @@ function ActionDropdown({ isOpen, onToggle, onEdit, onDelete, onToggleFeatured, 
 export default function DashboardPage() {
     const [projects, setProjects] = useState<DashboardProject[]>(INITIAL_PROJECTS);
     const [activeMenu, setActiveMenu] = useState<string>("home");
-    const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
+    const [sidebarOpen, setSidebarOpen] = useState<boolean>(true);
     const [searchQuery, setSearchQuery] = useState<string>("");
     const [filterCategory, setFilterCategory] = useState<string>("all");
     const [showFormModal, setShowFormModal] = useState<boolean>(false);
@@ -693,7 +693,7 @@ export default function DashboardPage() {
             />
 
             {/* Main Content */}
-            <div className="flex-1 flex flex-col overflow-hidden lg:ml-64">
+            <div className={`flex-1 flex flex-col overflow-hidden transition-all duration-300 ${sidebarOpen ? "lg:ml-64" : "ml-0"}`}>
                 {/* Header */}
                 <Header onMenuToggle={() => setSidebarOpen(!sidebarOpen)} />
 

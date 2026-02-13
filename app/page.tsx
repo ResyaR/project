@@ -68,7 +68,7 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 // Logo URL
-const LOGO_URL = "https://upload.wikimedia.org/wikipedia/id/2/21/LogoSMKN1Jenpo.jpeg";
+const LOGO_URL = "/logo.png";
 
 // Header / Navbar Component
 const Header = () => {

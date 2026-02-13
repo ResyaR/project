@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Galeri Project Siswa | SMKN 1 Jenangan Ponorogo",
   description: "Jelajahi koleksi project inovatif dari siswa-siswi Rekayasa Perangkat Lunak SMKN 1 Jenangan Ponorogo.",
   icons: {
-    icon: "https://upload.wikimedia.org/wikipedia/id/2/21/LogoSMKN1Jenpo.jpeg",
+    icon: "/logo.png",
   },
 };
 
