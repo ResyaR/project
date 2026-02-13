@@ -5,6 +5,9 @@
   --color-foreground: #171717;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-teal-sidebar: #2c595a;
+  --color-primary: #2c595a;
+  --color-primary-foreground: #ffffff;
 }
 
 body {
@@ -43,22 +46,22 @@ body {
 }
 
 .nav-link-premium:hover {
-    color: #059669;
-    background: rgba(16, 185, 129, 0.08);
-    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
+    color: #2c595a;
+    background: rgba(44, 89, 90, 0.08);
+    box-shadow: 0 2px 8px rgba(44, 89, 90, 0.1);
 }
 
 .nav-active-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(44, 89, 90, 0.15) 0%, rgba(44, 89, 90, 0.1) 100%);
     border-radius: 9999px;
-    border: 1px solid rgba(16, 185, 129, 0.25);
-    box-shadow: 0 0 12px rgba(16, 185, 129, 0.15), inset 0 1px 0 rgba(255,255,255,0.5);
+    border: 1px solid rgba(44, 89, 90, 0.25);
+    box-shadow: 0 0 12px rgba(44, 89, 90, 0.15), inset 0 1px 0 rgba(255,255,255,0.5);
 }
 
 .nav-link-active {
-    color: #059669 !important;
+    color: #2c595a !important;
     font-weight: 600;
 }
 
@@ -88,15 +91,15 @@ body {
 }
 
 .mobile-nav-link:hover {
-    color: #059669;
-    background: rgba(16, 185, 129, 0.06);
+    color: #2c595a;
+    background: rgba(44, 89, 90, 0.06);
     padding-left: 1.25rem;
 }
 
 .mobile-nav-active {
-    color: #059669 !important;
+    color: #2c595a !important;
     font-weight: 600;
-    background: rgba(16, 185, 129, 0.08);
+    background: rgba(44, 89, 90, 0.08);
 }
 
 .mobile-active-dot {
@@ -106,9 +109,9 @@ body {
     transform: translateY(-50%);
     width: 4px;
     height: 60%;
-    background: linear-gradient(180deg, #10B981, #059669);
+    background: linear-gradient(180deg, #2c595a, #1f4041);
     border-radius: 0 4px 4px 0;
-    box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 0 8px rgba(44, 89, 90, 0.4);
 }
 
 /* ==========================================
@@ -116,7 +119,7 @@ body {
    ========================================== */
 
 .hero-glow {
-    background: radial-gradient(circle at 70% 30%, rgba(16, 185, 129, 0.12) 0%, transparent 50%);
+    background: radial-gradient(circle at 70% 30%, rgba(44, 89, 90, 0.12) 0%, transparent 50%);
 }
 
 /* ==========================================
@@ -133,8 +136,8 @@ body {
 }
 
 .project-card:hover {
-    border-color: #10B981;
-    box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.1), 0 8px 10px -6px rgba(16, 185, 129, 0.1);
+    border-color: #2c595a;
+    box-shadow: 0 20px 25px -5px rgba(44, 89, 90, 0.1), 0 8px 10px -6px rgba(44, 89, 90, 0.1);
 }
 
 /* ==========================================
@@ -151,8 +154,8 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    background: rgba(16, 185, 129, 0.1);
-    color: #059669;
+    background: rgba(44, 89, 90, 0.1);
+    color: #2c595a;
 }
 
 /* ==========================================
@@ -197,10 +200,10 @@ body {
 }
 
 .filter-pill.active {
-    background: #0F172A;
+    background: #2c595a;
     color: white;
-    border-color: #0F172A;
-    box-shadow: 0 4px 14px -3px rgba(15, 23, 42, 0.3);
+    border-color: #2c595a;
+    box-shadow: 0 4px 14px -3px rgba(44, 89, 90, 0.3);
 }
 
 /* ==========================================
@@ -245,7 +248,7 @@ body {
 
 .about-pattern {
     background-image: 
-        radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(44, 89, 90, 0.08) 0%, transparent 40%),
         radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.06) 0%, transparent 40%);
 }
 

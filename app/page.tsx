@@ -143,7 +143,7 @@ const Header = () => {
                                     scrolled ? 'w-9 h-9' : 'w-11 h-11'
                                 }`}
                             />
-                            <div className="absolute -inset-1 rounded-lg bg-emerald-400/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity" />
+                            <div className="absolute -inset-1 rounded-lg bg-[#2c595a]/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity" />
                         </div>
                         <div className="hidden sm:block">
                             <p className={`font-bold tracking-tight transition-all duration-300 ${
@@ -197,7 +197,7 @@ const Header = () => {
                         >
                             <Button
                                 size="sm"
-                                className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-full px-5 text-sm gap-1.5 shadow-lg shadow-emerald-600/25 hover:shadow-emerald-600/40 transition-all duration-300"
+                                className="bg-[#2c595a] hover:bg-[#1f4041] text-white rounded-full px-5 text-sm gap-1.5 shadow-lg shadow-[#2c595a]/25 hover:shadow-[#2c595a]/40 transition-all duration-300"
                                 onClick={(e) => handleNavClick(e, '#projects')}
                             >
                                 Lihat Project
@@ -272,7 +272,7 @@ const Header = () => {
                                 >
                                     <motion.div whileTap={{ scale: 0.96 }}>
                                         <Button
-                                            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl gap-2 shadow-lg shadow-emerald-600/20"
+                                            className="w-full bg-[#2c595a] hover:bg-[#1f4041] text-white rounded-xl gap-2 shadow-lg shadow-[#2c595a]/20"
                                             onClick={(e) => handleNavClick(e, '#projects')}
                                         >
                                             Lihat Project
@@ -298,7 +298,7 @@ const HeroSection = () => {
     return (
         <section className="relative min-h-screen flex items-center hero-glow overflow-hidden" data-testid="hero-section">
             {/* Decorative elements */}
-            <div className="decoration-circle w-96 h-96 bg-emerald-400 -top-48 -right-48" />
+            <div className="decoration-circle w-96 h-96 bg-[#2c595a]/60 -top-48 -right-48" />
             <div className="decoration-circle w-64 h-64 bg-amber-400 bottom-20 -left-32" />
             
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-32 md:py-40">
@@ -318,7 +318,7 @@ const HeroSection = () => {
                                 data-testid="school-logo"
                             />
                             <div>
-                                <p className="text-sm font-semibold text-emerald-600 tracking-wide uppercase">SMKN 1 Jenangan</p>
+                                <p className="text-sm font-semibold text-[#2c595a] tracking-wide uppercase">SMKN 1 Jenangan</p>
                                 <p className="text-xs text-slate-500">Ponorogo, Jawa Timur</p>
                             </div>
                         </div>
@@ -327,7 +327,7 @@ const HeroSection = () => {
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.1]" data-testid="hero-title">
                                 Karya Siswa-Siswi
                             </h1>
-                            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-emerald-600 tracking-tight leading-[1.1]">
+                            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2c595a] tracking-tight leading-[1.1]">
                                 RPL
                             </h1>
                         </div>
@@ -427,8 +427,8 @@ const HeroSection = () => {
                             className="absolute -bottom-4 -left-4 glass-card rounded-xl p-4 shadow-xl"
                         >
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center">
-                                    <Award className="w-5 h-5 text-emerald-600" />
+                                <div className="w-10 h-10 rounded-full bg-[#2c595a]/10 flex items-center justify-center">
+                                    <Award className="w-5 h-5 text-[#2c595a]" />
                                 </div>
                                 <div>
                                     <p className="font-semibold text-slate-900 text-sm">Akreditasi Unggul</p>
@@ -540,7 +540,7 @@ const ProjectCard = ({ project, index, onClick }: ProjectCardProps) => {
             </div>
 
             <div className="p-5">
-                <h3 className="font-semibold text-lg text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors line-clamp-2">
+                <h3 className="font-semibold text-lg text-slate-900 mb-2 group-hover:text-[#2c595a] transition-colors line-clamp-2">
                     {project.title}
                 </h3>
                 <p className="text-sm text-slate-500 mb-4 line-clamp-2">
@@ -561,7 +561,7 @@ const ProjectCard = ({ project, index, onClick }: ProjectCardProps) => {
                 
                 <div className="flex items-center justify-between pt-3 border-t border-slate-100">
                     <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold text-sm">
+                        <div className="w-8 h-8 rounded-full bg-[#2c595a]/10 flex items-center justify-center text-[#1f4041] font-bold text-sm">
                             {project.student_name?.charAt(0)}
                         </div>
                         <div>
@@ -571,8 +571,8 @@ const ProjectCard = ({ project, index, onClick }: ProjectCardProps) => {
                     </div>
                     <div className="flex gap-1.5">
                         {project.demo_url && (
-                            <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center group-hover:bg-emerald-100 transition-colors">
-                                <ExternalLink className="w-4 h-4 text-emerald-600" />
+                            <div className="w-8 h-8 rounded-full bg-[#2c595a]/5 flex items-center justify-center group-hover:bg-[#2c595a]/10 transition-colors">
+                                <ExternalLink className="w-4 h-4 text-[#2c595a]" />
                             </div>
                         )}
                         {project.repo_url && (
@@ -605,7 +605,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                         <DialogHeader className="mb-6">
                             <div className="flex items-start justify-between">
                                 <div>
-                                    <Badge className="mb-3 bg-emerald-100 text-emerald-700 hover:bg-emerald-100">
+                                    <Badge className="mb-3 bg-[#2c595a]/10 text-[#1f4041] hover:bg-[#2c595a]/10">
                                         {project.category}
                                     </Badge>
                                     <DialogTitle className="text-2xl md:text-3xl font-bold text-slate-900">
@@ -662,8 +662,8 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                         <div className="bg-slate-50 rounded-xl p-4 mb-6">
                             <h4 className="font-semibold text-slate-900 mb-3">Informasi Pembuat</h4>
                             <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center">
-                                    <Users className="w-6 h-6 text-emerald-600" />
+                                <div className="w-12 h-12 rounded-full bg-[#2c595a]/10 flex items-center justify-center">
+                                    <Users className="w-6 h-6 text-[#2c595a]" />
                                 </div>
                                 <div>
                                     <p className="font-medium text-slate-900">{project.student_name}</p>
@@ -676,7 +676,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                         <div className="flex flex-wrap gap-3">
                             {project.demo_url && (
                                 <Button 
-                                    className="bg-emerald-600 hover:bg-emerald-700 gap-2"
+                                    className="bg-[#2c595a] hover:bg-[#1f4041] gap-2"
                                     onClick={() => window.open(project.demo_url, '_blank')}
                                     data-testid="demo-link"
                                 >
@@ -735,8 +735,8 @@ const ProjectsSection = ({ projects, categories, activeCategory, onCategoryChang
                     className="mb-12"
                 >
                     <div className="flex items-center gap-3 mb-4">
-                        <div className="w-12 h-1 bg-emerald-500 rounded-full" />
-                        <span className="text-emerald-600 font-semibold text-sm uppercase tracking-wider">Galeri Project RPL</span>
+                        <div className="w-12 h-1 bg-[#2c595a] rounded-full" />
+                        <span className="text-[#2c595a] font-semibold text-sm uppercase tracking-wider">Galeri Project RPL</span>
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
                         Project Siswa-Siswi RPL
@@ -804,7 +804,7 @@ const ProjectsSection = ({ projects, categories, activeCategory, onCategoryChang
                     </div>
                     <div className="w-px bg-slate-200 hidden sm:block" />
                     <div className="text-center">
-                        <p className="text-3xl font-bold text-emerald-600">{filteredProjects.filter(p => p.is_featured).length}</p>
+                        <p className="text-3xl font-bold text-[#2c595a]">{filteredProjects.filter(p => p.is_featured).length}</p>
                         <p className="text-sm text-slate-500">Project Unggulan</p>
                     </div>
                     <div className="w-px bg-slate-200 hidden sm:block" />
@@ -837,7 +837,7 @@ const AboutSection = () => {
                         viewport={{ once: true }}
                         className="space-y-6"
                     >
-                        <span className="text-emerald-600 font-semibold text-sm uppercase tracking-wider">Tentang Kami</span>
+                        <span className="text-[#2c595a] font-semibold text-sm uppercase tracking-wider">Tentang Kami</span>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900">
                             SMK Teknik Tertua di Ponorogo
                         </h2>
@@ -862,7 +862,7 @@ const AboutSection = () => {
                                     transition={{ delay: idx * 0.1 }}
                                     className="bg-white rounded-xl p-4 border border-slate-200 shadow-sm"
                                 >
-                                    <item.icon className="w-8 h-8 text-emerald-600 mb-2" />
+                                    <item.icon className="w-8 h-8 text-[#2c595a] mb-2" />
                                     <h4 className="font-semibold text-slate-900 text-sm">{item.title}</h4>
                                     <p className="text-xs text-slate-500">{item.desc}</p>
                                 </motion.div>
@@ -899,7 +899,7 @@ const AboutSection = () => {
                             className="absolute -bottom-6 -right-6 bg-white rounded-xl p-5 shadow-xl border border-slate-100"
                         >
                             <div className="text-center">
-                                <p className="text-4xl font-bold text-emerald-600">1000+</p>
+                                <p className="text-4xl font-bold text-[#2c595a]">1000+</p>
                                 <p className="text-sm text-slate-500">Siswa Aktif</p>
                             </div>
                         </motion.div>
@@ -943,17 +943,17 @@ const Footer = () => {
                         <h4 className="font-semibold text-slate-900 mb-4">Kontak</h4>
                         <div className="space-y-3">
                             <div className="flex items-start gap-3">
-                                <MapPin className="w-4 h-4 text-emerald-600 mt-1 flex-shrink-0" />
+                                <MapPin className="w-4 h-4 text-[#2c595a] mt-1 flex-shrink-0" />
                                 <p className="text-sm text-slate-600">
                                     Jl. Niken Gandini No. 98, Setono, Jenangan, Ponorogo
                                 </p>
                             </div>
                             <div className="flex items-center gap-3">
-                                <Phone className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                                <Phone className="w-4 h-4 text-[#2c595a] flex-shrink-0" />
                                 <p className="text-sm text-slate-600">(0352) 461473</p>
                             </div>
                             <div className="flex items-center gap-3">
-                                <Mail className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                                <Mail className="w-4 h-4 text-[#2c595a] flex-shrink-0" />
                                 <p className="text-sm text-slate-600">info@smkn1jenpo.sch.id</p>
                             </div>
                         </div>
@@ -971,7 +971,7 @@ const Footer = () => {
                                 "Teknik Otomasi Industri"
                             ].map((item, idx) => (
                                 <li key={idx}>
-                                    <span className="text-sm text-slate-600 hover:text-emerald-600 transition-colors cursor-pointer">
+                                    <span className="text-sm text-slate-600 hover:text-[#2c595a] transition-colors cursor-pointer">
                                         {item}
                                     </span>
                                 </li>
